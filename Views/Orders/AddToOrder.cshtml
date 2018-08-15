@@ -1,0 +1,17 @@
+@model List<Product>
+<h2>Order for @ViewBag.CustomerName</h2>
+<h2>Add product to order:</h2>
+
+<form action="AddingToOrder" method="post">
+    <select name="productid">
+        @foreach(Product product in @Model)
+        {
+            <option value="@product.id">@product.name</option>
+        }
+    </select>
+    <p>Quantity:</p>
+    <input type="hidden" name="customerid" value="@ViewBag.CustomerId">
+    <p><input type="number" min="0" name="quantity"></p>
+    <p><input type="submit" value="Submit"></p>
+</form>
+<hr>

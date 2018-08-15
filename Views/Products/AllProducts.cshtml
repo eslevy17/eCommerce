@@ -1,0 +1,16 @@
+@model List<Product>
+    
+<h2>All Products:</h2>
+
+<a asp-controller="Products" asp-action="AddProduct"><button>Add New Product</button></a>
+<br>
+@foreach (Product product in @Model)
+{
+    <div class="productblock">
+        <img class="productimage" src="@product.image">
+        <h3>@product.name - $@product.price</h3>
+        <hr>
+        <p>@product.description</p>
+        <p><i>@product.quantity available!</i></p>
+    </div>
+}

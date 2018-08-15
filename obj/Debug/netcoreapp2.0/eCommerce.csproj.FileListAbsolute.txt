@@ -1,0 +1,11 @@
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/bin/Debug/netcoreapp2.0/eCommerce.deps.json
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/bin/Debug/netcoreapp2.0/eCommerce.runtimeconfig.json
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/bin/Debug/netcoreapp2.0/eCommerce.runtimeconfig.dev.json
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/bin/Debug/netcoreapp2.0/eCommerce.dll
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/bin/Debug/netcoreapp2.0/eCommerce.pdb
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/obj/Debug/netcoreapp2.0/eCommerce.csprojResolveAssemblyReference.cache
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/obj/Debug/netcoreapp2.0/eCommerce.csproj.CoreCompileInputs.cache
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/obj/Debug/netcoreapp2.0/eCommerce.AssemblyInfoInputs.cache
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/obj/Debug/netcoreapp2.0/eCommerce.AssemblyInfo.cs
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/obj/Debug/netcoreapp2.0/eCommerce.dll
+/Users/ESL/Desktop/Coding Dojo Projects/C#/ORM/eCommerce/obj/Debug/netcoreapp2.0/eCommerce.pdb

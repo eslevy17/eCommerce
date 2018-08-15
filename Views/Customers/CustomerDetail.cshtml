@@ -1,0 +1,52 @@
+@model Customer
+<h2>Details for: @Model.first_name @Model.last_name</h2>
+
+<hr>
+<h4>Items in cart:</h4>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+        <th>Subtotal</th>
+    </tr>
+    @{int carttotal = 0;}
+    @foreach(Cart_Item cart_item in @Model.cart_items)
+    {
+        <tr>
+            <td>@cart_item.product.name</td>
+            <td>@cart_item.product_quantity</td>
+            <td>$@cart_item.product.price</td>
+            @{int subtotal = @cart_item.product.price * @cart_item.product_quantity;}
+            <td>$@subtotal</td>
+        </tr>
+        carttotal += subtotal;
+    }
+</table>
+<h4>Shopping Cart Total: $@carttotal</h4>
+<a href="/placeorder/@Model.id"><button>Place Order</button></a>
+
+<hr>
+<h4>Previous orders:</h4>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>Order #:</th>
+        <th>Items:</th>
+        <th>Order Total:</th>
+    </tr>
+    @foreach(Order order in @Model.orders)
+    {
+        int ordertotal = 0;
+        <tr>
+            <td>@order.id</td>
+            <td><ul>
+                @foreach(Order_Item orderitem in order.orders_and_items)
+                {
+                    <li>@orderitem.product.name x @orderitem.product_quantity</li>
+                    ordertotal += orderitem.product.price * orderitem.product_quantity;
+                }
+            </ul></td>
+            <td>$@ordertotal</td>
+        </tr>
+    }
+</table>
